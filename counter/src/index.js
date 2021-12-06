@@ -1,17 +1,34 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import reactDom from 'react-dom';
+import './index.css'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+var counter = 0;
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+function inc_element(){
+  counter+=1;
+  reactDom.render(<Test />, document.getElementById('root'))
+}
+function dec_element(){
+  counter-=1;
+  reactDom.render(<Test />, document.getElementById('root'))
+}
+function null_element(){
+  counter=0;
+  reactDom.render(<Test />, document.getElementById('root'))
+}
+
+function Test(){
+
+  return (
+  <div id="main">
+	
+  <p id="number">{counter}</p>
+  
+  <button type="button" onClick={inc_element}>Increment</button>
+  <button type="button" onClick={dec_element}>Decrement</button>
+  <button type="button" onClick={null_element}>Null</button>
+  
+</div>
+  );
+}
+reactDom.render(<Test />, document.getElementById('root'))

@@ -1,0 +1,33 @@
+*{
+	margin:0 px;
+	padding:0 px;
+	color:gray;
+}
+
+body{
+	background: rgb(34,193,195);
+	background: linear-gradient(90deg, rgba(34,193,195,1) 0%, rgba(212,31,93,1) 70%);
+	text-align: center;
+}
+
+#main{
+	width:300px;
+	height:150px;
+	background-color: #262626;
+	display:inline-block;
+	text-align: center;
+	border-radius:10px;
+}
+
+#number{
+	font-size:30px;
+}
+
+#main button{
+	margin: 5px;
+	margin-top:20px;
+	width:80px;
+	background-color:rgba(34,193,195,1);
+	color:black;
+	border-radius:10px;
+}
