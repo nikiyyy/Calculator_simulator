@@ -1,0 +1,35 @@
+*{
+	margin:0 px;
+	padding:0 px;
+	color:gray;
+	
+}
+body{
+	background: rgb(34,193,195);
+	background: linear-gradient(90deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+#form{
+	text-align:center;
+	margin-top: 150 px;
+
+}
+
+fieldset{
+	background-color: #262626;
+	margin-top: 150 px;
+	display: inline-block;
+	border-radius: 5px;
+	padding:50px;
+}
+fieldset p{
+	display:block
+}
+label{
+    display: inline-block;
+    width: 80px;
+}
+
+#usernamename{
+	border:5 px;
+}
+
