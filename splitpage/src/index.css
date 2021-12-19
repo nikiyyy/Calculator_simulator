@@ -1,0 +1,59 @@
+*{
+	margin:0px;
+	padding:0px;
+	font-family:'Germania One';
+}
+
+#root{
+	background-image: url("./src/bg.jpg");
+	background-repeat: no-repeat;
+	background-position-x: 0;
+	background-size: 110%;
+	background-position: center;
+	background-position-x: -80px;
+}
+
+.part{
+	height: 100vh;
+  width: 100vh;
+	background-repeat: no-repeat;
+  display: inline-block;
+  flex-grow: 1;
+}
+#left{
+	text-align: center;
+}
+
+#right{
+	text-align: center;
+}
+
+.content{
+	margin-top:75% ;
+}
+
+.part button{
+	width: 150px;
+	height: 35px;
+}
+
+#left button{ 
+	font-size: 18px;
+	border-radius: 3px;
+	background-color: dodgerblue;
+	border-color: midnightblue;
+}
+
+#right button{
+	font-size: 18px;
+	border-radius: 3px;
+	background-color:brown;
+	border-color:darkred;
+}
+
+#middle{
+	font-size: 38px;
+	position: fixed;
+	left:43%;
+	top: 5%;
+}
